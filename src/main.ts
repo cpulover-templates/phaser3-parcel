@@ -1,11 +1,20 @@
+import { GAME } from './constants/GAME'
 import Phaser from 'phaser'
 
-import BootGameScene from './scenes/BootGameScene'
+import MainGameScene from './scenes/MainGameScene'
 
-const config = {
-	width: 800,
-	height: 600,
-	scene: [BootGameScene]
+const config: Phaser.Types.Core.GameConfig = {
+	type: Phaser.AUTO,
+	width: GAME.WIDTH,
+	height: GAME.HEIGHT,
+	scene: [MainGameScene],
+	physics: {
+		default: GAME.PHYSIC_SYSTEM,
+		arcade: {
+			gravity: { y: GAME.GRAVITY },
+			debug: true
+		}
+	}
 }
 
 export default new Phaser.Game(config)

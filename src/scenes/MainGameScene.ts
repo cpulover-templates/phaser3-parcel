@@ -1,20 +1,18 @@
+import { SCENE } from '../constants/KEY'
 import Phaser from 'phaser'
 
-export default class BootGameScene extends Phaser.Scene {
+export default class MainGameScene extends Phaser.Scene {
     constructor() {
-        super('boot-game')
+        super(SCENE.LEVEL1)
     }
 
-    // load assets: images, audio, etc.
     preload() {
     }
 
-    // add objects to the scene
     create() {
         this.add.text(0, 0, "Loading game...")
     }
 
-    // loop
     update() {
     }
 }

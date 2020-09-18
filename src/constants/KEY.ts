@@ -1,5 +1,5 @@
 export const SCENE = {
-    LEVEL1: 'level1'
+    PLAY_GAME: 'playGame'
 }
 
 export const TEXTURE = {

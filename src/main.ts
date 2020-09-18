@@ -1,13 +1,13 @@
 import { GAME } from './constants/GAME'
 import Phaser from 'phaser'
 
-import MainGameScene from './scenes/MainGameScene'
+import PlayGameScene from './scenes/PlayGameScene'
 
 const config: Phaser.Types.Core.GameConfig = {
 	type: Phaser.AUTO,
 	width: GAME.WIDTH,
 	height: GAME.HEIGHT,
-	scene: [MainGameScene],
+	scene: [PlayGameScene],
 	physics: {
 		default: GAME.PHYSIC_SYSTEM,
 		arcade: {
